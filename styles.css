@@ -1,3 +1,12 @@
+@font-face{
+    font-family: MyCustomFont;
+    src:url(Norse-Bold.otf) format("opentype");
+    font-weight:normal;
+    font-style:normal;
+
+}
+
+
 *{
     margin:0;
     padding:0;
@@ -11,10 +20,28 @@ body{
 }
 .left{
     background-image: url(halie-west-25xggax4bSA-unsplash.jpg); 
+    background-size: cover;
+    align-content: center;
 }
 .left >.headingLogo{
     background-color: rgb(255, 255, 255,0.10);
+    width:380px;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
 }  
+h1{
+    align-items: center;
+    font-family: MyCustomFont;
+    color:white;
+    font-size: 4rem;
+}
+.left>.headingLogo>img{
+    width:5rem;
+    
+    height:auto;
+}
 .right{
     height: 99vh;
     width:100%;
@@ -38,7 +65,7 @@ body{
 .right>div:first-child+div{
     padding-top:20px;
     padding-left: 20px;
-    box-shadow: -1px 5px 5px rgb(0, 0, 0,0.4);    
+    box-shadow: -3px 5px 5px rgb(0, 0, 0,0.4);    
     position: relative;
     z-index: 1;
 }
@@ -84,3 +111,4 @@ input[type="password"]:invalid{
     font-size: large;
     font-weight:600 ;
 }
+
