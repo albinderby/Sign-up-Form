@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    padding:0 100px;
+    width:100%;
+}
+.left{
+    background-image: url(halie-west-25xggax4bSA-unsplash.jpg); 
+}
+.left >.headingLogo{
+    background-color: rgb(255, 255, 255,0.10);
+}  
+.right{
+    height: 99vh;
+    width:100%;
+}
+.right>div{
+    height: calc(100vh/3);
+    
+    box-sizing: border-box;
+}
+.right>div:first-child{
+    background-color: #f9fafb;
+    text-wrap: pretty;
+    padding-top:85px;
+    padding-left: 20px;
+}.right>div:first-child p{
+    width: 53ch;
+    font-weight: 600;
+}
+
+
+.right>div:first-child+div{
+    padding-top:20px;
+    padding-left: 20px;
+    box-shadow: -1px 5px 5px rgb(0, 0, 0,0.4);    
+    position: relative;
+    z-index: 1;
+}
+h3{
+    padding-bottom: 10PX;
+}
+fieldset{
+    border:none;
+margin-bottom: 10px;
+}
+ul{
+    display: flex;
+    gap:4rem;
+}
+ul>li{
+    display: flex;
+    flex-direction:column;
+    list-style: none;
+}
+ul>li>input{
+    width: 16rem;
+}
+input[type="password"]:invalid{
+    border-color: red;
+}
+.right>div:last-child{
+    background-color: #f9fafb;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.right button{
+    width:12rem;
+    font-size: 1.3rem;
+    background-color: #596d48;    
+    border:none;
+    border-radius: 3px;
+    color:white;
+    margin-bottom: 2rem;
+}
+.right a{
+    color:#596d48;
+    font-size: large;
+    font-weight:600 ;
+}
